@@ -10,8 +10,8 @@ import { GoogleTagManager } from "@next/third-parties/google";
 const serverConfig = getServerSideConfig();
 
 export const metadata: Metadata = {
-  title: "人工智能写作",
-  description: "Your personal ChatGPT Chat Bot.",
+  title: "动感视界AI",
+  description: "Your personal Chat Bot.",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#151515" },
   ],
   appleWebApp: {
-    title: "人工智能写作",
+    title: "天津动感视界AI",
     statusBarStyle: "default",
   },
 };
