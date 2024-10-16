@@ -161,9 +161,9 @@ export function SideBar(props: { className?: string }) {
           基于中谷农业大模型ChatZg <br />
           请关注公众号:中谷农业，获取访问权限
         </div>
-        <div className={styles["sidebar-logo"] + " no-dark"}>
+        {/* <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
-        </div>
+        </div> */}
       </div>
 
       <div className={styles["sidebar-header-bar"]}>
