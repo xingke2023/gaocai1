@@ -110,6 +110,10 @@ export function NewChat() {
     }
   }, [groups]);
 
+  // masks.map(
+  //   (mask, i) => console.log(mask)
+  // )
+
   return (
     <div className={styles["new-chat"]}>
       <div className={styles["mask-header"]}>

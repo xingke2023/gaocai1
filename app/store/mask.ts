@@ -94,6 +94,7 @@ export const useMaskStore = createPersistStore(
             },
           }) as Mask,
       );
+      console.log(buildinMasks);
       return userMasks.concat(buildinMasks);
     },
     search(text: string) {
