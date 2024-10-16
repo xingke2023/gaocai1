@@ -1,6 +1,40 @@
 import { BuiltinMask } from "./typing";
 
 export const CN_MASKS: BuiltinMask[] = [
+  
+  {
+    avatar: "1f638",
+    name: "农作物种植专家",
+    context: [
+      {
+        id: "writer-0",
+        role: "system",
+        content:
+          "我希望你充当农作物种植专家，解答一些农作物种植技术问题。",
+        date: "",
+      },
+      {
+        id: "writer-1",
+        role: "user",
+        content:
+          "我希望你充当农作物种植专家，解答一些农作物种植技术问题。",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-4o-mini",
+      temperature: 1,
+      max_tokens: 2000,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+    createdAt: 1688899480511,
+  },
   {
     avatar: "1f5bc-fe0f",
     name: "以文搜图",
@@ -45,32 +79,6 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: true,
     createdAt: 1688899480510,
-  },
-  {
-    avatar: "1f638",
-    name: "农作物种植专家",
-    context: [
-      {
-        id: "writer-0",
-        role: "user",
-        content:
-          "我希望你充当农作物种植专家，解答一些农作物种植技术问题。",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "gpt-4o-mini",
-      temperature: 1,
-      max_tokens: 2000,
-      presence_penalty: 0,
-      frequency_penalty: 0,
-      sendMemory: true,
-      historyMessageCount: 4,
-      compressMessageLengthThreshold: 1000,
-    },
-    lang: "cn",
-    builtin: true,
-    createdAt: 1688899480511,
   },
   {
     avatar: "1f978",
